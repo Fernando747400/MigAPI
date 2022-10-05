@@ -11,7 +11,7 @@ namespace APIF747.Models
 
         }
 
-        public DbSet<MovieItem> TodoItems { get; set; }
+        public DbSet<MovieItem> MovieItems { get; set; }
     }
 }
 

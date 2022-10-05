@@ -24,14 +24,14 @@ namespace APIF747.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MovieItem>>> GetTodoItems()
         {
-            return await _context.TodoItems.ToListAsync();
+            return await _context.MovieItems.ToListAsync();
         }
 
         // GET: api/MovieItems/5
         [HttpGet("{id}")]
         public async Task<ActionResult<MovieItem>> GetMovieItem(long id)
         {
-            var movieItem = await _context.TodoItems.FindAsync(id);
+            var movieItem = await _context.MovieItems.FindAsync(id);
 
             if (movieItem == null)
             {
@@ -77,7 +77,7 @@ namespace APIF747.Controllers
         [HttpPost]
         public async Task<ActionResult<MovieItem>> PostMovieItem(MovieItem movieItem)
         {
-            _context.TodoItems.Add(movieItem);
+            _context.MovieItems.Add(movieItem);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetMovieItem), new { id = movieItem.Id }, movieItem);
@@ -87,13 +87,13 @@ namespace APIF747.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteMovieItem(long id)
         {
-            var movieItem = await _context.TodoItems.FindAsync(id);
+            var movieItem = await _context.MovieItems.FindAsync(id);
             if (movieItem == null)
             {
                 return NotFound();
             }
 
-            _context.TodoItems.Remove(movieItem);
+            _context.MovieItems.Remove(movieItem);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -101,7 +101,7 @@ namespace APIF747.Controllers
 
         private bool MovieItemExists(long id)
         {
-            return _context.TodoItems.Any(e => e.Id == id);
+            return _context.MovieItems.Any(e => e.Id == id);
         }
     }
 }
