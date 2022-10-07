@@ -10903,24 +10903,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\5\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\avion\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repositorios\\MigAPI\\APIF747\\APIF747.csproj",
+      "projectUniqueName": "A:\\Repositorios\\MigAPI\\APIF747\\APIF747.csproj",
       "projectName": "APIF747",
-      "projectPath": "C:\\Repositorios\\MigAPI\\APIF747\\APIF747.csproj",
-      "packagesPath": "C:\\Users\\5\\.nuget\\packages\\",
-      "outputPath": "C:\\Repositorios\\MigAPI\\APIF747\\obj\\",
+      "projectPath": "A:\\Repositorios\\MigAPI\\APIF747\\APIF747.csproj",
+      "packagesPath": "C:\\Users\\avion\\.nuget\\packages\\",
+      "outputPath": "A:\\Repositorios\\MigAPI\\APIF747\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\5\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\avion\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
